@@ -1,4 +1,5 @@
 #Importing class Database from database.py file
+#Written by Luis Alfredo Chaparro Gómez
 from database import Database, ALIASES
 import random
 
