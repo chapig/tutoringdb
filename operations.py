@@ -1,7 +1,11 @@
 #Importing class Database from database.py file
-#Written by Luis Alfredo Chaparro Gómez
 from database import Database, ALIASES
 import random
+
+class Languages:
+    
+    english = "EN"
+    french = "FR"
 
 class HiddenMeta:
     
@@ -187,3 +191,6 @@ class Course:
             self.amount_lastpayment = student_results[5]
             self.total_payed = student_results[6]
             self.debt = student_results[7]
+        
+student = Course()
+language = Languages()
