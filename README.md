@@ -2,7 +2,7 @@
 
 ## Usage
 ```py
-from .operations import student
+from operations import student
 
 student = student.create("fr", "Luis", "Chaparro", "Venezuelan", "Venezuela")
 student.update_payment(20.4) #Student paid 20.4 US dollars
