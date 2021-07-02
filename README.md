@@ -2,9 +2,9 @@
 
 ## Usage
 ```py
-from operations import student
+from operations import student, language
 
-student = student.create("fr", "Luis", "Chaparro", "Venezuelan", "Venezuela")
+student = student.create(language.french, "Luis", "Chaparro", "Venezuelan", "Venezuela")
 student.update_payment(20.4) #Student paid 20.4 US dollars
 student.update_payment(54.2) #Student paid 54.2 US dollars
 print(student.total_payed)
