@@ -1,4 +1,4 @@
-# TutoringDB - Personal database to store and update my students' payments and information
+# TutoringDB
 
 ## Usage
 ```py
