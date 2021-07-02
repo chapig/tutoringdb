@@ -10,7 +10,7 @@ student.update_payment(54.2) #Student paid 54.2 US dollars
 print(student.total_payed)
 # Output: 74.6
 
-student = student.get("fr", "Alfonso", "Gutierrez")
+student = student.get(language.french, "Alfonso", "Gutierrez")
 print(student.nationality)
 # Venezuelan
 print(student.total_payed)
