@@ -12,7 +12,7 @@ print(student.total_payed)
 
 student = student.get("fr", "Alfonso", "Gutierrez")
 print(student.nationality)
-# Colombian
+# Venezuelan
 print(student.total_payed)
 # 65.4 USD
 ```
