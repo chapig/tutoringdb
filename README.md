@@ -15,3 +15,25 @@ print(student.nationality)
 print(student.total_payed)
 # 65.4 USD
 ```
+
+```sql
+CREATE TABLE FrenchClass (
+  StudentFirstName TEXT NOT NULL,
+  StudentLastName TEXT NOT NULL,
+  ResidenceCountry TEXT NOT NULL,
+  Nationality TEXT NOT NULL,
+  DateLastPayment TEXT,
+  AmountLastPayment REAL,
+  TotalPayed REAL,
+  Debt REAL ,
+  ID TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE PaymentHistory (
+  FirstName TEXT NOT NULL, 
+  LastName TEXT NOT NULL, 
+  DatePayment TEXT NOT NULL,
+  Amount REAL NOT NULL,
+  ID TEXT NOT NULL
+);
+```
