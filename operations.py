@@ -187,7 +187,3 @@ class Course:
             self.amount_lastpayment = student_results[5]
             self.total_payed = student_results[6]
             self.debt = student_results[7]
-        
-if __name__ == "__main__":
-    
-    student = Course()
