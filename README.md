@@ -1,5 +1,6 @@
 # TutoringDB - Personal database to store and update my students' payments and information
 
+##Usage
 ```py
 from .operations import student
 
@@ -16,6 +17,7 @@ print(student.total_payed)
 # 65.4 USD
 ```
 
+##SQL Table
 ```sql
 CREATE TABLE FrenchClass (
   StudentFirstName TEXT NOT NULL,
