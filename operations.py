@@ -16,9 +16,9 @@ class HiddenMeta:
                             residence.replace(" ", "").upper()[0:1] + \
                             nationality.replace(" ", "").upper()[0:1] + \
                             str(random.choice(range(len(fname) + len(lname))))
-
+                            
 class Result:
-    
+
     def __init__(self, table, database, firstname, lastname, residence, nationality, date_lastpayment, amount_lastpayment, total_payed, debt, identification):
         
         self.table = table
@@ -182,16 +182,5 @@ class Course:
                         self.residence, self.nationality, 
                         None, 0, 0, 0, self.created_id)
 
-    def fetch_attributes(self):
-        
-        with self.database.conn:
-            
-            self.database.cursor.execute(f"""SELECT * FROM {self.table} WHERE ID = "{self.id}";""")
-            student_results = self.database.cursor.fetchall()[0]
-            self.date_lastpayment = student_results[4]
-            self.amount_lastpayment = student_results[5]
-            self.total_payed = student_results[6]
-            self.debt = student_results[7]
-        
 student = Course()
 language = Languages()
